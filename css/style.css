@@ -2,40 +2,76 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body {
     background-color: #581B98;
+
 }
 
-.logo-container {
+
+.link-navegacao {
+    color: #91B0DD;
+    font-size: 22px;
+}
+
+.link-navegacao:hover {
+    color: #faee1c;
+    font-size: 24px;
+}
+
+
+.font {
+    color: #91B0DD;
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 3.2rem;
+    border-radius: 40px;
+
+}
+
+.navbar2 {
+    padding-left: 70px;
+    gap: 33%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+.conteudo-inicial {
+    width: 100%;
     display: flex;
-    width: 200px;
-    flex-direction: column;
-    justify-content: flex-end;
+    height: 200px;
+    margin-top: 50px;
+    justify-content: space-around;
+
 }
 
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #91B0DD;
-}
-
-ul {
+.pai {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     justify-content: space-evenly;
+    gap: 20px;
+    background-color: #222831;
+
 }
 
-.style-list,a{
-    list-style: none;
-    text-decoration: none;
+.viagem-int {
+    background-color: #3e3636;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.txt-card {
     color: #91B0DD;
-    font-size: 23px;
+}
+
+.font-card {
+    color: #91B0DD;
+    margin-left: 70px;
+    margin-top: 100px;
 }
