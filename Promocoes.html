@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do Tour</title>
+    <title>Do Tour Promoções</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/promocoes.css">
     <link rel="website icon" type="logo" href="imagens/Do Tour.svg">
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
 
-            <div class="container-fluid navbar2">
-                <a href="index.html"><img src="imagens/Do Tour.svg" alt=""></a>
+            <div class="container-fluid">
+                <a href="index.html"><img src="imagens/Do Tour.svg" alt="Logo Do Tour"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -29,122 +29,89 @@
                             <a class="nav-link link-navegacao" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-navegacao" href="Promocoes.html">Promoções</a>
+                            <a class="nav-link link-navegacao" href="promocoes.html">Promoções</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle link-navegacao" href="destinos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="destinos.html">Fernando de Noronha - Brasil</a></li>
+                                <li><a class="dropdown-item" href="destinos.html">Machu Picchu - Peru</a></li>
+                                <li><a class="dropdown-item" href="destinos.html">MonteVerde - Costa Rica </a></li>
+                                <li><a class="dropdown-item" href="destinos.html">Patagônia - Argentina</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link link-navegacao" href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-navegacao" href="destinos.html">Destinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-navegacao" href="#">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-navegacao" href="cadastro.html">Iniciar sessão</a>
+                            <a class="nav-link link-navegacao" href="login.html">Iniciar sessão</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-
     </header>
 
 
 
     <main>
-        <div class="font-card">
-            <h1>Todas as Promoções</h1>
+
+        <div class="container">
+            <div>
+                <img class="img-fluid" style="height: 400px; border-radius: 50px;" src="imagens/deconto.svg" alt="Desconto de 20%">
+            </div>
         </div>
-        <div class="pai">
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/Disney.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Orlando</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
 
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/RioJaneiro.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Rio de Janeiro</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section class="container">
+            <div class="card mb-3" style="max-width: 830px; background-color: #032222;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="imagens/MonteVerdeCostaRica.jpg" class="img-fluid rounded-start" alt="MonteVerde">
+                    </div>
+                    <div class="col-md-8" style="background-color: #032222;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #FFF2E7;">MonteVerde</h5>
+                            <p class="card-text" style="color: #FFF2E7; font-size: 17px;">Bem-vindo a Monteverde, Costa Rica! Monteverde é uma região encantadora conhecida por sua biodiversidade, florestas nubladas e emocionantes atividades ao ar livre.</p>
+                            <p style="color: #FFF2E7;">Conta com uma Reserva Biologica, Tirolesas, muitas Trilhas e muito mais.</p>
+                            <p style="color: #FFF2E7;">Ida e volta</p>
+                            <a href="#" class="btn active bg-success" style="color: #FFF2E7;" role="button"
+                                data-bs-toggle="button" aria-pressed="true"><strike>2.600</strike> por 2.080 R$</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/Paris.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Paris - Torre Eifeel</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card mb-3" style="max-width: 830px; background-color: #032222;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="imagens/Patagonia_Argentina.jpg" class="img-fluid rounded-start" alt="Patagônia">
+                    </div>
+                    <div class="col-md-8" style="background-color: #032222;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #FFF2E7;">Patagônia</h5>
+                            <p class="card-text" style="color: #FFF2E7; font-size: 17px;">Bem-vindo à Patagônia Argentina, uma região deslumbrante e vasta conhecida por suas paisagens naturais incríveis, geleiras majestosas, lagos cristalinos e uma abundante vida selvagem.</p>
+                            <p style="color: #FFF2E7;">Conta com um Parque Nacional Los Glaciares, Trekking e muita atividades ao ar livre e observação da vida selvagem.</p>
+                            <p style="color: #FFF2E7;">Ida e vola</p>
+                            <a href="#" class="btn active bg-success" style="color: #FFF2E7;" role="button"
+                                data-bs-toggle="button" aria-pressed="true"><strike>2.400</strike> por 1.920 R$</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/MarcoZero.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Marco Zero - Olinda</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/MarcoZero.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Marco Zero - Olinda</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/MarcoZero.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Marco Zero - Olinda</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/MarcoZero.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Marco Zero - Olinda</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card promocoes-alta" style="width: 16rem;">
-                <img src="imagens/MarcoZero.jpg" class="card-img-top" alt="...">
-                <div class="card-body txt-card">
-                    <h5 class="card-title">Marco Zero - Olinda</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-        </div>
+        </section>
 
     </main>
 
     <footer>
-            <div class="rodape">
-               <a href="index.html"> <img src="imagens/Do Tour.svg" alt=""></a>
-                <p class="txt-card">Copyright &#169 by Do Tour. All rights reserved.</p>
-                <a class="link-navegacao" href="Promocoes.html">Promoções</a>
-                <a class="link-navegacao" href="destinos.html">Destinos</a>
-                <a class="link-navegacao" href="#">Contato</a>
-            </div>
+        <div class="rodape">
+            <a href="index.html"> <img src="imagens/Do Tour.svg" alt="Logo Do Tour"></a>
+            <p class="titulo">Copyright &#169 by Do Tour. All rights reserved.</p>
+            <a class="link-rodape" href="promocoes.html">Promoções</a>
+            <a class="link-rodape" href="destinos.html">Destinos</a>
+            <a class="link-rodape" href="contato.html">Contato</a>
+        </div>
     </footer>
 </body>
 
