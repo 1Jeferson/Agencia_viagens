@@ -2,98 +2,123 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-
 body {
-    background-image: url(../imagens/Back.svg);
+    background-image: url(../imagens/Green.svg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    background-position: top left;
+    background-position: top;
+    background-attachment: scroll;
+
 }
 
 
 .link-navegacao {
-    color: #6e3b3b;
+    color: #FFF2E7;
     font-size: 22px;
-    text-decoration: none;
 }
 
-
 .link-navegacao:hover {
-    color: #be6a15;
+    color: #EBD000;
     font-size: 24px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 1.2rem 3.2rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1.2rem 3.2rem;
     border-radius: 40px;
 }
 
+
+.frase-efeito {
+    color: #FFF2E7;
+}
 
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 3.2rem;
     border-radius: 40px;
+
 }
 
-
-.navbar2 {
-    display: flex;
+.container-fluid {
     padding-left: 70px;
     gap: 33%;
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
-.dotour {
-    width: 250px;
-    padding-left: 60px;
-}
-
-/* Aqui termina a parte do header */
 
 
-/* Aqui começa a main */
-.container-home {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0 50px;
-        justify-content: space-evenly;  
-        background-color: rgba(0, 0, 0, 10%);
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 1.2rem 3.2rem;
-}
-
-
-.container-home2{
+.conteudo-inicial {
+    width: 100%;
     display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+
+}
+
+
+.container-principal {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
+    gap: 20px;
     flex-wrap: wrap;
-    margin: 0 50px;
-    justify-content: space-evenly;  
-    background-color: rgba(0, 0, 0, 10%);
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 1.2rem 3.2rem;
 }
 
-.texto {
-    margin: 200px 50px 20px 50px;
-    color: #6e3b3b;
+.container-principal .caixa {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 35px;
+    background-size: cover;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.container-principal .caixa:hover {
+    scale: 1.2;
+    transition: .5s;
+}
+
+.container-principal .caixa::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: cover;
+    filter: blur(25px);
+    opacity: 0.5;
+    z-index: 1;
+    transition: .2s;
+}
+
+.container-principal .caixa:hover::before {
+    opacity: 0;
+    transition: .2s;
 }
 
 
-/* Aqui vai ficar os possiveis cards */
-.destino-alta {
-    background-color: #f5c16c;
-    margin: 20px;
-    border-radius: 10px;
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 85%;
+    margin-top: 150px;
 }
 
+.titulo {
+    color: #FFF2E7;
 
-.txt-card {
-    color:#6e3b3b ;
 }
 
+.paragrafo {
+    color: #FFF2E7;
+    font-size: 22px;
+    text-align: justify;
+
+}
 
 .rodape {
     width: 100%;
@@ -104,8 +129,7 @@ body {
     gap: 10px;
 }
 
-
 .link-rodape {
-    color: #6e3b3b;
     text-decoration: none;
+    color: #FFF2E7;
 }

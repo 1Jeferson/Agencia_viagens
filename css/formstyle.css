@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #581B98;
+    background-color: #032222;
 }
 
 .navbar{
@@ -27,10 +27,9 @@ body {
     flex-wrap: wrap;
     width: 400px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 30%);
+    background-color: #222831;
     border-radius: 15px;
     margin-top: 150px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1.2rem 3.2rem;
 }
 
 
@@ -44,10 +43,13 @@ body {
 }
 
 .cadastro {
-    background-color: #581B98;
     border: none;
     margin-left: 40%;
     margin-bottom: 20px;
     color: #91B0DD;
 }
  
+.contatos {
+    display: flex;
+    flex-direction: column;
+}
