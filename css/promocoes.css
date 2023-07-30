@@ -6,3 +6,18 @@
 .card-body {
     background-color: #032222;
 }
+
+
+.card-title {
+ color: #FFF2E7;
+}
+
+.card-text {
+    color: #FFF2E7;
+    font-size: 17px;
+}
+
+.paragrafo-card {
+    color: #FFF2E7;
+}
+
