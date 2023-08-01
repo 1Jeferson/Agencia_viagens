@@ -1,4 +1,4 @@
-Algoritmo "Ag�ncia de Viagens Do Tour"
+Algoritmo "Agencia de Viagens Do Tour"
 
 var
    clientes: vetor[1..5] de caractere
@@ -18,7 +18,7 @@ inicio
       totalClientes <- totalClientes + 1
       clientes[totalClientes] <- "Nome: " + nome + " | CPF: " + cpf
    senao
-      escreval("Limite de clientes atingido. Imposs�vel cadastrar.")
+      escreval("Limite de clientes atingido. Impossivel cadastrar.")
    fimse
 fimprocedimento
 
@@ -33,7 +33,7 @@ inicio
       totalDestinos <- totalDestinos + 1
       destinos[totalDestinos] <- "Destino: " + destino
    senao
-      escreval("Limite de destinos atingido. Imposs�vel cadastrar.")
+      escreval("Limite de destinos atingido. Impossivel cadastrar.")
    fimse
 fimprocedimento
 
@@ -78,7 +78,7 @@ Inicio
       escreval("4. Consultar destinos")
       escreval("5. Sair")
       escreval("======================")
-      escreval("Digite a op��o desejada:")
+      escreval("Digite a opcao desejada:")
       leia(opcao)
 
       escolha opcao
