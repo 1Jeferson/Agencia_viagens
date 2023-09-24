@@ -4,69 +4,99 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(../imagens/Green\ 1.svg);
-    background-repeat: no-repeat;
-    background-color: #032222;
-    background-size: cover;
-    background-position: top;
-    background-attachment: scroll;
 
+body {
+    background-color: #fae0bd;
 }
 
-
+/* AQUI COMEÇA O HEADER */
 .link-navegacao {
-    color: #FFF2E7;
+    color: #fae0bd;
     font-size: 22px;
 }
 
 .link-navegacao:hover {
     color: #EBD000;
-    font-size: 24px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1.2rem 3.2rem;
-    border-radius: 40px;
-}
-
-.logo-site {
-    width: 156px;
-    margin-left: 14px;
-}
-
-
-.frase-efeito {
-    color: #FFF2E7;
 }
 
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 3.2rem;
-    border-radius: 40px;
-
-}
-
-.container-fluid {
-    padding-left: 70px;
-    gap: 33%;
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
-
-
-
-.conteudo-inicial {
+    background-color: #032222;
+    position: fixed;
     width: 100%;
-    display: flex;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    justify-content: space-evenly;
+    z-index: 1;
+}
+
+
+.container {
+    gap: 50px;
 
 }
+
+.conteudo-header {
+    background-color: #032222;
+    text-align: center;
+    height: 350px;
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-header h1 {
+    color: #f8efe2;
+}
+
+.conteudo-header input {
+    height: 40px;
+    width: 18%;
+    text-align: center;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.conteudo-header button {
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    margin-left: 2px;
+    color: #f8efe2;
+    background-color: #D8C84D;
+}
+
+.promo-photo img {
+    width: 700px;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+.form-select {
+    width: 18%;
+    height: 40px;
+    text-align: center;
+    color: #332D2D;
+    border-radius: 5px 0px 0px 5px;
+}
+
 /* AQUI ACABA O HEADER */
 
 
 /* AQUI COMEÇA A MAIN COM TODOS OS CONTEÚDOS */
+
+.titulo {
+    color: #332D2D;
+    margin-top: 100px;
+}
+
+.titulo h1 {
+    font-size: 30px;
+    color: #332D2D;
+    margin-left: 9%;
+    margin-bottom: 20px;
+}
+
+
 .container-principal {
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -75,7 +105,6 @@ body {
 }
 
 .container-principal .caixa {
-    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 35px;
@@ -85,19 +114,17 @@ body {
 }
 
 .container-principal .caixa:hover {
-    scale: 1.2;
+    scale: 1.1;
     transition: .5s;
 }
 
 .container-principal .caixa::before {
-    position: absolute;
     width: 100%;
     height: 100%;
     background: inherit;
     background-size: cover;
     filter: blur(25px);
     opacity: 0.5;
-    z-index: 1;
     transition: .2s;
 }
 
@@ -106,41 +133,200 @@ body {
     transition: .2s;
 }
 
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
 
-article {
+.container-cards h5 {
+    color: #f8efe2;
+}
+
+.container-cards p {
+    color: #f8efe2;
+}
+/* SOBRE */
+.sobre-nos {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
     width: 85%;
+    margin-left: 9%;
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 
-.titulo {
-    color: #FFF2E7;
-
+.sobre-nos h1 {
+    color: #332D2D;
+    font-size: 30px;
 }
 
-.paragrafo {
-    color: #FFF2E7;
+.sobre-nos p {
+    color: #332D2D;
     font-size: 22px;
-    text-align: justify;
-
 }
+/* FIM SOBRE */
 
-
-
-/* RODAPÉ DA PÁGINA */
-.rodape {
+/* AQUI COMEÇA A ESTILIZAÇÃO DA PÁGINA DESTINOS */
+.container-destinos {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
-.link-rodape {
-    text-decoration: none;
-    color: #FFF2E7;
+.card {
+    width: 300px;
+    height: 590px;
+    margin: 25px;
+    background-color: #f8efe2;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
 }
+
+.card-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-body {
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-local {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-titulo {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.card p {
+    color: #332D2D;
+    font-weight: 500;
+}
+
+
+.card-footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #032222;
+}
+
+.card-footer a {
+    color: #D8C84D;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+
+/* AQUI ACABA A ESTILIZAÇÃO DA PÁGINA DESTINOS */
+
+/* RODAPÉ DA PÁGINA */
+
+.site-footer {
+    background-color: #032222;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #D8C84D;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+.container-form {
+    width: 400px;
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+

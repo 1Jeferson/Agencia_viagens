@@ -18,8 +18,8 @@
     <header>
         <nav class="navbar navbar-expand-lg">
 
-            <div class="container-fluid">
-                <a href="index.html"><img class="logo-site" src="/Front_end/imagens/Do Tour.svg" alt="logo Do Tour"></a>
+            <div class="container">
+                <a href="index.html"><img src="/Front_end/imagens/Do Tour.svg" alt="logo Do Tour"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
                                 <li><a class="dropdown-item" href="destinos.html">Patagônia - Argentina</a></li>
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link link-navegacao" href="contato.html">Contato</a>
+                            <a class="nav-link link-navegacao" href="#contato">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-navegacao" href="login.html">Iniciar sessão</a>
@@ -54,18 +54,23 @@
                 </div>
             </div>
         </nav>
-        <div class="container conteudo-inicial">
 
-            <h1 class="frase-efeito">Aventure-se com a Do Tour</h1>
+        <div class="conteudo-header">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecionar destino</option>
+                <option value="1">Fernando de Noronha</option>
+                <option value="2">Patagônia</option>
+                <option value="3">Machu Picchu</option>
+                <option value="3">Monte Verde</option>
+            </select>
+            <input type="date" name="date" id="">
+            <button type="button" class="btn btn-outline-warning">Finalizar</button>
         </div>
-
     </header>
-
-
 
     <main>
         <div class="titulo">
-            <h1 style="margin-left: 120px;">Destinos</h1>
+            <h1 id="melhores-destinos">Os melhores destinos</h1>
         </div>
         <section class="container-principal">
             <a href="destinos.html">
@@ -83,13 +88,13 @@
             </a>
         </section>
 
-        <article>
-            <div class="titulo">
-                <h1>Sobre a Do Tour</h1>
+        <article class="sobre-nos">
+            <div>
+                <h1 id="sobre">Sobre a Do Tour</h1>
             </div>
-            <div class="paragrafo">
+            <div>
                 <p>Somos uma agência de viagens especializada em proporcionar experiências inesquecíveis de conexão com
-                    a natureza. Se você busca fugir da agitação urbana e mergulhar em destinos incriveis, cercados pela
+                    a natureza. Se você busca ugir da agitação urbana e mergulhar em destinos incriveis, cercados pela
                     beleza selvagem do mundo natural, então você está no lugar certo!</p>
                 <p>Na Do Tour, acreditamos que viajar pela natureza é uma jornada de autodescoberta, uma
                     oportunidade para renovar o espírito e nutrir a alma. Combinando aventura e educação ambiental,
@@ -104,13 +109,51 @@
         </article>
     </main>
 
-    <footer>
-        <div class="rodape">
-            <a href="index.html"> <img src="/Front_end/imagens/Do Tour.svg" alt="Logo Do Tour"></a>
-            <p class="titulo">Copyright &#169 by Do Tour. All rights reserved.</p>
-            <a class="link-rodape" href="promocoes.html">Promoções</a>
-            <a class="link-rodape" href="destinos.html">Destinos</a>
-            <a class="link-rodape" href="contato.html">Contato</a>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div id="contato" class="container-form">
+                    <h2 style="color: #FFF2E7;">Entre em Contato</h2>
+                    <div class="mb-3">
+                        <label style="width: 400px; color: #FFF2E7;" for="exampleFormControlInput1"
+                            class="form-label">Email:</label>
+                        <input type="email" class="form-control form-input" id="exampleFormControlInput1"
+                            placeholder="email@gmail">
+                    </div>
+                    <div class="mb-3">
+                        <label style="width: 400px; color: #FFF2E7;" for="exampleFormControlTextarea1"
+                            class="form-label">Digite
+                            sua Dúvida:</label>
+                        <textarea class="form-control form-input" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    </form>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Links rápidos</h6>
+                    <ul class="footer-links">
+                        <li><a href="#melhores-destinos">Melhores destinos</a></li>
+                        <li><a href="#">Politica de privacidade</a></li>
+                        <li><a href="Promocoes.html">Promoções em alta</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by Do Tour.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <a style="width: 60px;" href="https://www.instagram.com/" target="_blank"><img style="width: 45px;"
+                        src="/Front_end/imagens/logo-instagram 1.svg" alt="instagram"></a>
+                <a style="width: 60px;" href="https://twitter.com/" target="_blank"><img style="width: 45px;"
+                        src="/Front_end/imagens/logo-twitter 1.svg" alt="Twitter"></a>
+            </div>
         </div>
     </footer>
 </body>
