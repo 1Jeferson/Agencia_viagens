@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #fae0bd;
+    background-color: var(--color-background);
     font-size: 16px;
     color: #222;
     font-family: 'Roboto', sans-serif;
@@ -13,7 +13,7 @@ body {
     margin: 5% auto;
     width: 600px;
     height: 400px;
-    background: #FFF;
+    background: var(--font-white);
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -50,21 +50,15 @@ input[type="password"] {
     transition: 0.2s ease;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-    border-bottom: 2px solid #16a085;
-    color: #16a085;
-    transition: 0.2s ease;
-}
 
 input[type="submit"] {
     margin-top: 28px;
     width: 120px;
     height: 32px;
-    background: #16a085;
+    background: var(--blue-login);
     border: none;
     border-radius: 2px;
-    color: #FFF;
+    color: var(--font-white);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -91,7 +85,7 @@ input[type="submit"]:active {
     left: 280px;
     width: 40px;
     height: 40px;
-    background: #DDD;
+    background: var(--font-white);
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     line-height: 40px;
@@ -115,7 +109,7 @@ input[type="submit"]:active {
     display: block;
     margin-bottom: 40px;
     font-size: 28px;
-    color: #332D2D;
+    color: var(--font-black);
     text-align: center;
 }
 
@@ -125,7 +119,7 @@ button.social-signin {
     height: 36px;
     border: none;
     border-radius: 2px;
-    color: #FFF;
+    color: var(--font-white);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
@@ -143,18 +137,18 @@ button.social-signin:active {
     transition: 0.2s ease;
 }
 
-button.social-signin.facebook {
-    background: #32508E;
-}
-
 button.social-signin.google {
-    background: #DD4B39;
+    background: var(--orange-google);
 }
 
 .voltar {
     text-decoration: none;
     font-size: 20px;
-    background-color: #D8C84D;
-    color: #f8efe2;
+    background-color: var(--hover-button);
+    color: var(--font-white);
     padding: 7px;
+}
+
+.voltar:hover {
+    background-color: var(--hover-nav);
 }
