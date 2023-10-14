@@ -21,6 +21,7 @@ body {
 }
 
 /* AQUI COMEÇA O HEADER */
+
 .link-navegacao {
     color: var(--font-white);
     font-size: 22px;
@@ -89,9 +90,7 @@ body {
     margin-top: 100px;
 }
 
-
 /* AQUI ACABA O HEADER */
-
 
 /* AQUI COMEÇA A MAIN COM TODOS OS CONTEÚDOS */
 
@@ -106,7 +105,6 @@ body {
     margin-left: 9%;
     margin-bottom: 20px;
 }
-
 
 .container-principal {
     display: flex;
@@ -161,6 +159,7 @@ body {
 }
 
 /* SOBRE */
+
 .sobre-nos {
     display: flex;
     flex-direction: column;
@@ -258,7 +257,6 @@ body {
     transform: scale3d(1.1, 1.1, 1);
 }
 
-
 /* AQUI ACABA A ESTILIZAÇÃO DA PÁGINA DESTINOS */
 
 /* RODAPÉ DA PÁGINA */
@@ -320,14 +318,14 @@ body {
     margin: 0
 }
 
+.container-form {
+    width: 400px;
+}
+
 @media (max-width:991px) {
     .site-footer [class^=col-] {
         margin-bottom: 30px
     }
-}
-
-.container-form {
-    width: 400px;
 }
 
 @media (max-width:767px) {
